@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Items List</title>
+</head>
+<body>
+  <h1>Items</h1>
+  <ul>
+    <% items.forEach(item => { %>
+      <li>
+        <%= item.item %>
+      </li>
+    <% }) %>
+    <button onclick="window.location.href='/newItem'">Add Item</button>
+  </ul>
+</body>
+</html>
